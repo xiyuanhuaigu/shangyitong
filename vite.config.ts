@@ -10,13 +10,13 @@ export default defineConfig({
       "@":path.resolve(__dirname,'src')
     }
   },
-  // 配置代理kuayu
+  // 配置代理跨域
 
   server: {
     proxy: {
       // 带选项写法：http://localhost:5173/api/bar -> http://jsonplaceholder.typicode.com/bar
-      '/api': {
-        target: 'http://syt.atguigu.cn',
+      '/admin': {
+        target: 'http://139.198.34.216:8201',
         changeOrigin: true,
       },
     }
