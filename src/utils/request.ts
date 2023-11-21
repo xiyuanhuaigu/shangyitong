@@ -4,7 +4,7 @@ import { ElMessage } from "element-plus";
 // 利用axios.create的方法去创建一个axios实例：
 
 const request = axios.create({
-  baseURL: "/admin", //请求的基础路径的设置,
+  baseURL: "/api", //请求的基础路径的设置,
   timeout: 5000,
 });
 

@@ -15,10 +15,14 @@ export default defineConfig({
   server: {
     proxy: {
       // 带选项写法：http://localhost:5173/api/bar -> http://jsonplaceholder.typicode.com/bar
-      '/admin': {
+      '/api/hosp': {
         target: 'http://139.198.34.216:8201',
         changeOrigin: true,
       },
+      '/api/cmn': {
+        target: 'http://139.198.34.216:8202',
+        changeOrigin: true,
+      }
     }
   }
 })
